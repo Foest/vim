@@ -32,6 +32,7 @@ set undofile
 
 inoremap jk <esc>
 noremap ; q:i
+noremap <leader>q :q<cr>
 let mapleader = ' '
 noremap <leader>w :w<cr>
 autocmd BufRead,BufWrite * if ! &bin | silent! %s/\s\+$//ge | endif
