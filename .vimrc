@@ -29,12 +29,17 @@ set expandtab
 set ls=2
 set colorcolumn=85
 set undofile
+let mapleader = ' '
 
-inoremap jk <esc>
+filetype plugin indent on
+
+nmap <leader>q :q<cr>
+noremap / /\v
 noremap ; q:i
 noremap <leader>q :q<cr>
-let mapleader = ' '
 noremap <leader>w :w<cr>
+inoremap jk <esc>
+
 autocmd BufRead,BufWrite * if ! &bin | silent! %s/\s\+$//ge | endif
 
 "highlight trailing spaces
