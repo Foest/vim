@@ -29,7 +29,11 @@ set expandtab
 set ls=2
 set colorcolumn=85
 set undofile
+set cmdheight=2
+set lazyredraw
+
 let mapleader = ' '
+
 
 filetype plugin indent on
 
