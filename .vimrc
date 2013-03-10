@@ -34,7 +34,6 @@ set lazyredraw
 
 let mapleader = ' '
 
-
 filetype plugin indent on
 
 nmap <leader>q :q<cr>
@@ -49,5 +48,11 @@ autocmd BufRead,BufWrite * if ! &bin | silent! %s/\s\+$//ge | endif
 "highlight trailing spaces
 hi link SpaceError Error
 call matchadd("SpaceError", "\\s\\+$")
+
+"go to last edit position on file open
+autocmd BufReadPost *
+     \ if line("'\"") > 0 && line("'\"") <= line("$") |
+     \   exe "normal! g`\"" |
+     \ endif
 
 colorscheme slate
