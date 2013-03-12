@@ -49,6 +49,9 @@ autocmd BufRead,BufWrite * if ! &bin | silent! %s/\s\+$//ge | endif
 hi link SpaceError Error
 call matchadd("SpaceError", "\\s\\+$")
 
+"Pressing <space> ss will toggle and untoggle spell checking
+map <leader>ss :setlocal spell!<cr>
+
 "go to last edit position on file open
 autocmd BufReadPost *
      \ if line("'\"") > 0 && line("'\"") <= line("$") |
