@@ -56,6 +56,12 @@ call matchadd("SpaceError", "\\s\\+$")
 "Pressing <space> ss will toggle and untoggle spell checking
 map <leader>ss :setlocal spell!<cr>
 
+"No sound on errors
+set noerrorbells
+set novisualbell
+set t_vb=
+set tm=500
+
 "go to last edit position on file open
 autocmd BufReadPost *
      \ if line("'\"") > 0 && line("'\"") <= line("$") |
