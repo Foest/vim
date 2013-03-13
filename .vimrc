@@ -43,6 +43,10 @@ noremap <leader>q :q<cr>
 noremap <leader>w :w<cr>
 inoremap jk <esc>
 
+"Treat long lines as break lines (useful when moving around in them)
+map j gj
+map k gk
+
 autocmd BufRead,BufWrite * if ! &bin | silent! %s/\s\+$//ge | endif
 
 "highlight trailing spaces
