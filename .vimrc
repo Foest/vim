@@ -31,6 +31,7 @@ set colorcolumn=85
 set undofile
 set cmdheight=2
 set lazyredraw
+set mat=2
 
 let mapleader = ' '
 
@@ -43,7 +44,7 @@ noremap <leader>q :q<cr>
 noremap <leader>w :w<cr>
 inoremap jk <esc>
 
-"Treat long lines as break lines (useful when moving around in them)
+"treat long lines as break lines (useful when moving around in them)
 map j gj
 map k gk
 
@@ -56,7 +57,7 @@ call matchadd("SpaceError", "\\s\\+$")
 "Pressing <space> ss will toggle and untoggle spell checking
 map <leader>ss :setlocal spell!<cr>
 
-"No sound on errors
+"no sound on errors
 set noerrorbells
 set novisualbell
 set t_vb=
