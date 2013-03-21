@@ -42,6 +42,7 @@ noremap / /\v
 noremap ; q:i
 noremap <leader>q :q<cr>
 noremap <leader>w :w<cr>
+noremap <leader>sr :%s/
 inoremap jk <esc>
 
 "treat long lines as break lines (useful when moving around in them)
