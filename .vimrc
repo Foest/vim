@@ -32,6 +32,7 @@ set undofile
 set cmdheight=2
 set lazyredraw
 set mat=2
+set smarttab
 
 let mapleader = ' '
 
