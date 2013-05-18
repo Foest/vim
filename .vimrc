@@ -57,7 +57,7 @@ hi link SpaceError Error
 call matchadd("SpaceError", "\\s\\+$")
 
 "Pressing <space> ss will toggle and untoggle spell checking
-map <leader>ss :setlocal spell!<cr>
+map <leader>sc :setlocal spell!<cr>
 
 "no sound on errors
 set noerrorbells
